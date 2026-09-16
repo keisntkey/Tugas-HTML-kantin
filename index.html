@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang - Kantin SANASE</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <header>
+        <h1>Kantin SANASE</h1>
+        <p>Enak, Murah, dan Mengenyangkan!</p>
+    </header>
+
+    <!-- Navigasi dengan Link HTML -->
+    <nav>
+        <a href="makanan.html" class="nav-btn">Makanan & Snack</a>
+        <a href="minuman.html" class="nav-btn">Minuman</a>
+        <a href="index.html" class="nav-btn active">🛒 Keranjang</a>
+        <a href="informasi.html" class="nav-btn">Informasi & Titip Jual</a>
+    </nav>
+
+    <div class="container">
+        <div class="info-section">
+            <h2>🛒 Keranjang Pesanan Kamu</h2>
+            <div id="daftar-pesanan">
+                <p>Fitur keranjang statis untuk keperluan tugas Git.</p>
+            </div>
+            <h3 style="text-align: right; color: var(--primary-color);">Total: <span id="total-harga">Rp 0</span></h3>
+            <hr style="border: 1px solid #eee; margin: 30px 0;">
+
+            <h2>Detail Pemesan (Mahasiswa)</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nama-pembeli">Nama Lengkap:</label>
+                    <input type="text" id="nama-pembeli" placeholder="Masukkan nama kamu" required>
+                </div>
+                <div class="form-group">
+                    <label for="prodi">Jurusan / Prodi:</label>
+                    <input type="text" id="prodi" placeholder="Contoh: Teknik Metalurgi" required>
+                </div>
+                <button type="submit" class="submit-btn" style="width: 100%; font-size: 1.2rem;">Kirim Pesanan via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

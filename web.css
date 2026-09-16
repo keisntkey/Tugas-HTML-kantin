@@ -1,0 +1,246 @@
+/* Deklarasi Variabel Warna dari Kode Kamu */
+:root {
+    --primary-color: #432f2e;  
+    --secondary-color: #c4dae8; 
+    --bg-color: #feefb8;       
+    --text-color: #432f2e;      
+}
+
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color); /* Latar belakang Butter */
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* --- BAGIAN HEADER --- */
+header {
+    background-color: var(--secondary-color); /* Header warna Blue yang menenangkan */
+    color: var(--primary-color);
+    text-align: center;
+    padding: 50px 20px;
+    /* Efek garis bawah coklat tegas */
+    border-bottom: 4px solid var(--primary-color); 
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    /* Bayangan teks putih agar gaya retronya tetap ada */
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.7); 
+}
+
+header p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+/* --- BAGIAN NAVIGASI  --- */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #432f2e; /* Disesuaikan dengan Chocopie */
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* Tambahan agar tombol tidak berdempetan */
+    gap: 15px; 
+    padding: 15px 20px;
+    border-bottom: 6px solid var(--primary-color);
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: var(--bg-color); /* Teks tombol warna Butter agar kontras di atas coklat */
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.nav-btn:hover {
+    border-color: var(--bg-color);
+    transform: translateY(-2px);
+}
+
+/* Tombol Aktif di Navigasi */
+.nav-btn.active {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+}
+
+/* --- KONTAINER UTAMA --- */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- GRID MENU (MAKANAN & MINUMAN) --- */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Kotak Menu dengan Gaya "Ada Coklatnya" (Retro Shadow) */
+.card {
+    background-color: var(--secondary-color); /* Kotak warna Blue agar pas di atas Butter */
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    border: 2px solid var(--primary-color); /* Garis coklat tegas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 4px 4px 0px var(--primary-color); /* Bayangan solid Chocopie */
+}
+
+.card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0px var(--primary-color);
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card p {
+    color: var(--primary-color);
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    min-height: 45px;
+    opacity: 0.9;
+}
+
+.card .price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Tombol Umum (Pesan & Submit) */
+.pesan-btn, .submit-btn {
+    background-color: var(--primary-color); /* Tombol Chocopie */
+    color: var(--bg-color); /* Teks Butter */
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.pesan-btn:hover, .submit-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+.pesan-btn:active, .submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* --- BAGIAN FORM & INFORMASI --- */
+.info-section {
+    background-color: var(--secondary-color); /* Latar Blue */
+    padding: 40px;
+    border-radius: 16px;
+    border: 2px solid var(--primary-color);
+    box-shadow: 4px 4px 0px var(--primary-color);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.info-section p {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: var(--bg-color);
+    transition: all 0.3s ease;
+    color: var(--primary-color);
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    background-color: #ffffff;
+}
+
+textarea {
+    resize: vertical;
+    font-family: inherit;
+}
+
+#daftar-pesanan {
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px dashed var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .nav-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-section {
+        padding: 25px 15px;
+    }
+}
