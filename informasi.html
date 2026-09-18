@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi - Kantin SANASE</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <header>
+        <h1>Kantin SANASE</h1>
+        <p>Enak, Murah, dan Mengenyangkan!</p>
+    </header>
+
+    <nav>
+        <a href="makanan.html" class="nav-btn">Makanan & Snack</a>
+        <a href="minuman.html" class="nav-btn">Minuman</a>
+        <a href="index.html" class="nav-btn">🛒 Keranjang</a>
+        <a href="informasi.html" class="nav-btn active">Informasi & Titip Jual</a>
+    </nav>
+
+    <div class="container">
+        <div class="info-section">
+            <h2>Tentang Kantin SANASE</h2>
+            <p>Kantin SANASE berlokasi di area kantin Hijrah Fakultas Teknik. Buka setiap hari Senin - Jumat dari jam 07:00 hingga 17:00.</p>
+            
+            <hr style="border: 1px solid #eee; margin: 30px 0;">
+
+            <h2>Tertarik Menitipkan Jualanmu?</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap / Nama Stand:</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama kamu" required>
+                </div>
+                <div class="form-group">
+                    <label for="produk">Produk yang akan dititip:</label>
+                    <textarea id="produk" rows="4" placeholder="Jelaskan produkmu" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Kirim Pengajuan</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
