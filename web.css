@@ -43,7 +43,7 @@ header p {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #432f2e; 
+    background-color: #432f2e;
     flex-wrap: wrap;
     position: sticky;
     top: 0;
@@ -104,7 +104,11 @@ h2 {
     text-align: center;
     border: 2px solid var(--primary-color); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 4px 4px 0px var(--primary-color); 
+    box-shadow: 4px 4px 0px var(--primary-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card:hover {
